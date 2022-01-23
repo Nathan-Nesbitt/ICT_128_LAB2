@@ -35,11 +35,3 @@ function Q9 {
 function Q10 {
 
 }
-
-function Q11 {
-
-}
-
-function Q12 {
-
-}
