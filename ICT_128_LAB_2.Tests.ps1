@@ -53,8 +53,9 @@ Describe 'Check-Q4' {
 
 Describe 'Check-Q5' {
     It 'Basic Test' {
-        $result = Q5 1 
-        $result.Id | Should -Be 1
+        $processID = Start-Job -ScriptBlock { Start-Sleep 5 }
+        $result = Q5 $processID.Id
+        $result.Id | Should -Be $processID.Id
     }
 }
 
